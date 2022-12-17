@@ -1,5 +1,5 @@
 
-> **This action has been updated from the first beta version of GH Actions to the new beta version of GH Actions. See below for the new structure required in your workflow.**
+> **This action uses the Latest Ruby version compared to the original action (version 3.1.0).**
 
 # A GitHub Action for Custom Jekyll Builds on GitHub Pages
 
@@ -31,7 +31,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_REPOSITORY: ${{ secrets.GITHUB_REPOSITORY }}
           GITHUB_ACTOR: ${{ secrets.GITHUB_ACTOR }}
-        uses: BryanSchuetz/jekyll-deploy-gh-pages@master
+        uses: andyw-0612/jekyll-deploy-gh-pages@master
 ```
 
 Clones the repo, builds the site, and commits it back to the `gh-pages` branch of the repository. That's it. Just add the above example to a `main.yml` file in the `.github/workflows` directory of your repository—see caveats below. 
