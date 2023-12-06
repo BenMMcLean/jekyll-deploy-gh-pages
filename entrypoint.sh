@@ -19,5 +19,4 @@ echo -n 'Files to Commit:' && ls -l | wc -l && \
 git commit -m'action build' > /dev/null 2>&1 && \
 git push --force $remote_repo master:$remote_branch > /dev/null 2>&1 && \
 rm -fr .git && \
-cd ../
 echo '👍 GREAT SUCCESS!'
